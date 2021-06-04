@@ -13,14 +13,15 @@
 <body>
 
     <section class="sezione-calcolo">
-        <div class="container">
-            <h2 class="text-uppercase text-light text-center p-5">calcola il prezzo del tuo biglietto</h2>
+
+        <h2 class="text-uppercase text-light text-center p-3">calcola il prezzo del tuo biglietto</h2>
+
+        <div class="container bg-white">
             
-            <div class="box bg-white">
                 <div class="row py-3">
 
                     <div class="col-4 text-center">
-                        <label for="nome">Nome e Cognome</label>
+                        <label for="nome" class="d-block">Nome e Cognome</label>
                         <input type="text" name="nome" id="nome">
                     </div>
                     <div class="col-4 text-center">
@@ -28,7 +29,7 @@
                         <input type="text" name="km" id="km">
                     </div>
                     <div class="col-4 text-center">
-                        <label for="fascia-eta">Fascia d'etá</label>
+                        <label for="fascia-eta" class="d-block">Fascia d'etá</label>
                         <select id="fascia-eta">
                             <option value="minorenne">Minorenne</option>
                             <option value="maggiorenne">Maggiorenne</option>
@@ -36,25 +37,76 @@
                         </select>
                     </div>
                     
-
                 </div>
-            </div>
         
-            <div class="box bg-white">
                 <div class="row py-3">
 
-                    
+                    <div class="col text-center">
+
+                        <button id="genera" class="mx-2">Genera</button>
+                        <button id="annulla" class="mx-2">Annulla</button>
+
+                    </div>
                     
                 </div>
-            </div>
-        
         
         </div>
             
 
     </section>
 
+    <section class="sezione-biglietto">
 
+        <h2 class="text-uppercase text-light text-center p-2">il tuo biglietto</h2>
+
+        <div class="container bg-white py-3">
+
+                <div class="row px-3 py-1">
+
+                    <div class="col px-0">
+                        <h5 class="text-uppercase">dettaglio passeggieri</h5>
+                    </div>
+
+                </div>
+            
+                <div class="row px-3">
+
+                    <div class="col-3 px-2 py-1 bg-secondary">
+                        <h5 class="text-uppercase">nome passeggiero</h5>
+                    </div>
+
+                    <div class="col">
+                        <div class="row">
+
+                            <div class="col-3 px-2 text-center">
+                                <h5 class="offerta">Offerta</h5>
+                                <div id="offerta"></div>
+                            </div>
+                            
+                            <div class="col-3 px-2 text-center">
+                                <h5 class="carrozza">Carrozza</h5>
+                                <div id="carrozza"></div>
+                            </div>
+
+                            <div class="col-3 px-2 text-center">
+                                <h5 class="codice-cp">Codice CP</h5>
+                                <div id="codice-cp"></div>
+                            </div>
+
+                            <div class="col-3 px-2 text-center">
+                                <h5 class="costo-biglietto">Costo biglietto</h5>
+                                <div id="costo-biglietto"></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+        
+        </div>
+            
+
+    </section>
 
 
 
