@@ -34,7 +34,6 @@ genera.addEventListener("click", function(){
         fascia = "Nessun'offerta";
     }
 
-    
 
     prezzo = prezzo.toFixed(2);
 
