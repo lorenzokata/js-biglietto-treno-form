@@ -24,15 +24,17 @@ genera.addEventListener("click", function(){
 
     var prezzo = km * 0.21;
 
-    fascia = "Nessun'offerta";
-
     if (fascia == "minorenne") {
         prezzo *= 0.8;
         fascia = "Sconto minorenne"
-    } else if (fascia == "over65") {
+    }else if (fascia == "over65") {
         prezzo *= 0.6;
         fascia = "Sconto maggiorenne"
+    } else {
+        fascia = "Nessun'offerta";
     }
+
+    
 
     prezzo = prezzo.toFixed(2);
 
